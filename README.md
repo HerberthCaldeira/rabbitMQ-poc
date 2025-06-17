@@ -18,8 +18,17 @@ docker compose up
 make run filepath=path-to-file args=params
 ```
 
-testing work queue:
-    * shell 1: make run filepath=src/task-work/worker.php
-    * shell 2 :make run filepath=src/task-work/task.php args=2 
+### Testing the Work Queue
+
+To test the work queue functionality:
+
+* **Shell 1 (Worker):** Run the worker to listen for and process tasks.
+    ```bash
+    make run filepath=src/task-work/worker.php
+    ```
+* **Shell 2 (Task Producer):** Send a task to the queue.
+    ```bash
+    make run filepath=src/task-work/task.php args=2
+    ```
 
 
