@@ -10,16 +10,16 @@ To get the RabbitMQ service up and running, navigate to the project's root direc
 
 ```bash
 docker compose up
-
+```
 
 2. how to run scripts:
 
-´´´bash
+```bash
 make run filepath=path-to-file args=params
-´´´
+```
 
 testing work queue:
-    - shell 1: make run filepath=src/task-work/worker.php
-    - shell 2 :make run filepath=src/task-work/task.php args=2 
+    * shell 1: make run filepath=src/task-work/worker.php
+    * shell 2 :make run filepath=src/task-work/task.php args=2 
 
 
